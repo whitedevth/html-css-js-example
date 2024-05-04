@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="detail">
+        <label>ชื่อจริง</label>
+        <p id="firstName"></p>
+        <label>นามสกุล</label>
+        <p id="lastName"></p>
+    </div>
+
+    <script>
+        // const param = new URLSearchParams(window.location.search);
+        // const firstName = param.get('firstName');
+        // const lastName = param.get('lastName');
+
+        // document.getElementById('firstName').innerHTML = firstName;
+        // document.getElementById('lastName').innerHTML = lastName;
+
+        const firstName = document.getElementById('firstName');
+        const lastName = document.getElementById('lastName');
+
+        firstName.innerHTML = localStorage.getItem('firstName');
+        lastName.innerHTML = localStorage.getItem('lastName');
+    </script>
+</body>
+
+</html>
